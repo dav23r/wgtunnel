@@ -12,6 +12,9 @@ go build .
 ```
 At this point target binary `./tunnel` is created. It should be run with superuser privileges since it creates network devices via `netlink`.
 
+## Prerequisites for deployment
+On both server and the client `docker` client and runtime and kernel implementation of `wireguard` should be present.
+
 ## Run on HOST A (server)
 ```
 dav23r@dav23r-NUC7i3DNKE:~$ sudo ./tunnel 
